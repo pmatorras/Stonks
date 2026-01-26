@@ -1,4 +1,9 @@
 # Financial-ML
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
+![Sharpe Ratio](https://img.shields.io/badge/Sharpe-0.93-success.svg)
+![Annual Return](https://img.shields.io/badge/Return-20.2%25-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 A machine learning system for equity selection that predicts which S&P 500 stocks will outperform the market benchmark. The project combines market data with company fundamentals to construct long/short portfolios, using time series cross-validation to prevent lookahead bias and comprehensive backtesting to validate performance against SPY. The goal: identify stocks with positive alpha while maintaining robust risk management through systematic validation at both model and portfolio levels
 
@@ -36,6 +41,8 @@ flowchart TD
     F -.-> G[Portfolio Diagnostics]
     F --> H[Performance vs SPY]
 ```
+
+**Deployment Considerations**: The modular CLI design enables easy cloud adaptation—data ingestion can run on AWS Lambda/Cloud Functions, feature engineering on batch processing services, and model training on scheduled compute instances. All artifacts are versioned CSVs stored locally, but the architecture supports migration to S3/Azure Blob with minimal refactoring.
 
 ***
 ## Table of Contents
@@ -464,6 +471,7 @@ This README provides a high-level overview. For detailed information, please ref
 - **[`docs/methodology.md`](docs/methodology.md)** - Technical implementation details, formulas, model specifications
 - **[`docs/decisions.md`](docs/decisions.md)** - Design rationale for key choices (features, rebalancing frequency, etc.)
 
+**Project Portfolio Page**: See [pablo.matorras.com/projects/financial-ml.html](https://pablo.matorras.com/projects/financial-ml.html) for an overview with visualizations and key takeaways.
 
 
 <br><hr>
