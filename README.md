@@ -385,7 +385,7 @@ Multiple models were evaluated using 3-fold time series cross-validation:
 
 | Fold | Train Period | Test Period | Test AUC |
 |------|--------------|-------------|----------|
-| 1 | 2010-2016 (6 yrs) | 2016-2018 (2 yrs) | 0.18 |
+| 1 | 2010-2016 (6 yrs) | 2016-2018 (2 yrs) | 0.518 |
 | 2 | 2010-2018 (8 yrs) | 2018-2021 (3 yrs) | 0.517 |
 | 3 | 2010-2021 (11 yrs) | 2021-2025 (4 yrs) | 0.541 |
 
